@@ -115,6 +115,7 @@ dy_cmd/
 ├── cli.py              # 命令行界面主程序
 ├── douyin_parser.py    # 抖音解析核心模块
 ├── requirements.txt    # 项目依赖
+├── LICENSE            # 非商业用途许可证
 └── README.md          # 项目说明文档
 ```
 
