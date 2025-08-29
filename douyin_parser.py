@@ -25,7 +25,7 @@ class DouyinParser:
     """抖音视频解析器"""
     
     def __init__(self):
-        self.base_url = "https://dy.gglz.cn/api/hybrid/video_data"
+        self.base_url = "https://dy.chixiaotao.cn/api/hybrid/video_data"
         self.session = requests.Session()
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
