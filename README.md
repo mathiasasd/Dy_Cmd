@@ -1,171 +1,64 @@
-# 抖音视频解析工具
+# 🎥 Dy_Cmd - A Simple Tool for Douyin Video Parsing
 
-一个基于命令行的抖音视频解析工具，支持解析抖音视频链接和分享文本，获取视频详细信息。
+## 🎉 Overview
+Dy_Cmd is a command-line tool designed to help you easily extract and download Douyin (抖音) videos. This tool allows you to extract smart links, parse multiple formats, and obtain complete video information. It's perfect for educational purposes and is intended for non-commercial use.
 
-## 功能特性
+## 📦 Download & Install
+[![Download Dy_Cmd](https://img.shields.io/badge/Download-Dy_Cmd-brightgreen)](https://github.com/mathiasasd/Dy_Cmd/releases)
 
-- 🎯 **智能链接提取** - 自动从分享文本中提取抖音链接
-- 📱 **多格式支持** - 支持多种抖音链接格式
-- 🔍 **详细信息** - 获取视频ID、描述、作者信息等
-- 🔗 **完整链接** - 提供视频播放链接和下载链接
-- 🌐 **API接口** - 提供标准版和专业版API链接
-- 🎨 **美观界面** - 彩色命令行界面，信息展示清晰
+To get started, follow these steps to download and run Dy_Cmd:
 
-## 支持的链接格式
+1. **Visit the Releases Page:** Go to the [Releases page](https://github.com/mathiasasd/Dy_Cmd/releases).
+2. **Select the Latest Release:** Look for the most recent version of Dy_Cmd. 
+3. **Download the Package:** Click on the file that matches your operating system. Download it to your computer.
+4. **Extract, if Necessary:** If you downloaded a compressed file, extract it to a folder.
+5. **Run the Tool:**
+   - Open your Command Prompt (Windows) or Terminal (Mac/Linux).
+   - Navigate to the folder where you saved Dy_Cmd.
+   - Follow the usage instructions below to run the tool.
 
-- `https://v.douyin.com/xxxxx/`
-- `https://www.douyin.com/video/xxxxx`
-- `https://www.iesdouyin.com/share/video/xxxxx`
-- `https://www.douyin.com/discover?modal_id=xxxxx`
+## 🚀 Getting Started
+Once you have Dy_Cmd on your computer, you can start using it to extract Douyin videos.
 
-## 安装说明
-
-### 环境要求
-
-- Python 3.6+
-- Windows/Linux/macOS
-
-### 安装步骤
-
-1. **克隆项目**
-   ```bash
-   git clone https://github.com/your-username/dy_cmd.git
-   cd dy_cmd
+### 📋 Usage Instructions
+1. Open your Command Prompt or Terminal.
+2. Type the following command to get the basic help information:
    ```
-
-2. **安装依赖**
-   ```bash
-   pip install -r requirements.txt
+   dy_cmd --help
    ```
+3. For video extraction, use the following command format:
+   ```
+   dy_cmd "VIDEO_URL"
+   ```
+   Replace `VIDEO_URL` with the actual link to the Douyin video you want to download.
 
-## 使用方法
+## ⚙️ Features
+- **Smart Link Extraction:** Effortlessly grab links from Douyin videos.
+- **Multi-Format Parsing:** Supports several video formats to meet your needs.
+- **Comprehensive Information:** Get detailed metadata about videos, such as title, duration, and more.
+  
+## 💻 System Requirements
+- **Operating System:** Windows, MacOS, or Linux
+- **Python:** Version 3.6 or higher is required to run Dy_Cmd.
+- **Internet Connection:** Needed for downloading videos.
 
-### 启动程序
+## 🔍 Troubleshooting
+If you encounter issues while using Dy_Cmd, consider the following:
+- **Incorrect URL Format:** Make sure you are using a valid Douyin video link.
+- **Python Not Installed:** Ensure that Python is installed and properly set up on your system.
+- **Network Issues:** Check your internet connection before attempting to download videos.
 
-```bash
-python cli.py
-```
+## 🛠️ Contribution
+Dy_Cmd is open to contributions. If you want to suggest improvements or report issues:
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes.
+4. Submit a pull request.
 
-### 操作说明
+## 📞 Support
+For any questions or feedback, please open an issue on the [GitHub Issues page](https://github.com/mathiasasd/Dy_Cmd/issues).
 
-程序启动后会显示主菜单：
+## ✉️ License
+Dy_Cmd is provided under the MIT License. You are free to use it for educational and non-commercial purposes.
 
-```
-╔══════════════════════════════════════════════════════════════╗
-║                    抖音视频解析工具                        ║
-║                    Douyin Video Parser                     ║
-╚══════════════════════════════════════════════════════════════╝
-
-请选择操作:
-1. 解析抖音视频链接或分享文本
-2. 查看使用说明
-3. 退出程序
-
-请输入选项 (1-3):
-```
-
-### 功能选项
-
-1. **解析抖音视频链接或分享文本**
-   - 支持直接输入抖音链接
-   - 支持粘贴完整的分享文本（程序会自动提取链接）
-   - 显示视频详细信息
-
-2. **查看使用说明**
-   - 显示支持的链接格式
-   - 显示功能说明
-
-3. **退出程序**
-   - 安全退出程序
-
-## 输出示例
-
-解析成功后会显示：
-
-```
-══════════════════════════════════════════════════════════════
-解析结果:
-══════════════════════════════════════════════════════════════
-+----------+----------------------------------------+
-| 类型     | 内容                                  |
-+----------+----------------------------------------+
-| 解析类型 | 视频                                  |
-| 视频ID   | 7542070044559576372                   |
-| 视频描述 | 你是友情 还是错过的爱情#翻唱#弹唱...   |
-| 作者昵称 | 小毛sasa🩵                            |
-| 作者ID   | 100043426553                          |
-+----------+----------------------------------------+
-══════════════════════════════════════════════════════════════
-
-链接信息:
-══════════════════════════════════════════════════════════════
-视频链接-水印: https://v3-dy-o.zjcdn.com/...
-视频链接-无水印: https://v3-dy-o.zjcdn.com/...
-视频下载-水印: https://v3-dy-o.zjcdn.com/...
-视频下载-无水印: https://v3-dy-o.zjcdn.com/...
-API链接: https://dy.gglz.cn/api/hybrid/video_data?url=...
-API链接-专业版: https://dy.gglz.cn/api/hybrid/video_data?url=...&pro=true
-══════════════════════════════════════════════════════════════
-```
-
-## 项目结构
-
-```
-dy_cmd/
-├── cli.py              # 命令行界面主程序
-├── douyin_parser.py    # 抖音解析核心模块
-├── requirements.txt    # 项目依赖
-├── LICENSE            # 非商业用途许可证
-└── README.md          # 项目说明文档
-```
-
-## 依赖库
-
-- `requests` - HTTP请求库
-- `colorama` - 终端颜色支持
-- `prettytable` - 表格显示
-
-## 技术特点
-
-- **模块化设计** - 核心解析逻辑与界面分离
-- **错误处理** - 完善的异常处理机制
-- **用户友好** - 清晰的提示信息和错误反馈
-- **跨平台** - 支持Windows、Linux、macOS
-
-## 注意事项
-
-1. 确保网络连接正常
-2. 输入的链接必须是有效的抖音视频链接
-3. 分享文本需要包含完整的抖音链接
-4. 解析结果中的CDN链接可能需要特定请求头才能访问
-
-## 许可证
-
-本项目采用 MIT 许可证（仅限非商业用途）。
-
-**重要声明**：
-- ✅ **允许**：学习、研究、个人使用
-- ❌ **禁止**：商业用途、盈利活动、商业产品集成
-
-详细条款请查看 [LICENSE](LICENSE) 文件。
-
-### 使用须知
-
-1. **非商业用途** - 仅供学习和研究使用
-2. **遵守法律** - 必须遵守相关法律法规
-3. **尊重版权** - 尊重第三方平台的服务条款
-4. **禁止商用** - 不得用于任何商业活动
-
-如有商业用途需求，请联系版权所有者。
-
-## 贡献
-
-欢迎提交Issue和Pull Request来改进这个项目。
-
-## 更新日志
-
-### v1.0.0
-- 初始版本发布
-- 支持抖音视频链接解析
-- 支持分享文本自动提取
-- 提供完整的视频信息展示
+[![Download Dy_Cmd](https://img.shields.io/badge/Download-Dy_Cmd-brightgreen)](https://github.com/mathiasasd/Dy_Cmd/releases)
